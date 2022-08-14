@@ -1,0 +1,25 @@
+<div class="card mb-4 rounded-3 shadow-sm"  >
+    <div class="card-header py-3">
+        <img src="assets/img/{{livro.id}}.jpg" class="card-img-top" style="height: 30rem;" alt="">
+    </div>
+    <div class="card-body">
+        <h1 class="card-title pricing-card-title">{{livro.name}}</h1>
+        <ul class="list-unstyled mt-3 mb-4">
+       
+            <li>{{livro.category}}</li>
+            <li>{{livro.quantity}} itens</li>
+           
+
+        </ul>
+        <h4> {{livro.price | currency: "BRL"}}</h4>
+        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comprar</button>
+    </div>
+</div>
+<!-- {
+id!: string
+name!: string
+price!: number
+quantity!: number
+category!: string
+img!: string
+} -->
